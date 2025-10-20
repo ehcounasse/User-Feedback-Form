@@ -7,22 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1> User Feedback </h1>
     <div id="container">
         <h2> Feedback Form </h2>
         <form id="feedbackform">
 <label>
     Name:
- <input type = "text" id = "username" placeholder="Enter your name here" data-tooltip="Please enter your full name.">
+ <input type = "text" id = "username" placeholder="Enter your name here" >
+        <span class="tooltip">Please enter your full name</span>
+      <small class="error-message"></small>
 </label>
 <p class="charcount" id="namecount"> </p>
 <label>
     Email:
- <input type = "email" id = "email" placeholder="Enter your email here" data-tooltip="We will never share your email">
+ <input type = "email" id = "email" placeholder="Enter your email here">
+    <span class="tooltip">Please enter a valid email</span>
+      <small class="error-message"></small>
 </label>
 <p class="charcount" id="emailcount"> </p>
 <label>
     Comments:
- <textarea id = "comments" placeholder="Enter your comments here" data-tooltip="Share your feedback"> </textarea>
+ <textarea id = "comments" placeholder="Enter your comments here"></textarea> 
+  <span class="tooltip"> Share your feedback </span>
+      <small class="error-message"></small>
 </label>
 <p class="charcount" id="commentcount"> </p>
 <button type ="submit"> Submit </button>
