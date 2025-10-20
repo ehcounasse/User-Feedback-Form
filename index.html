@@ -12,21 +12,25 @@
         <form id="feedbackform">
 <label>
     Name:
- <input type = "text" id = "username" placeholder="Enter your name here">
+ <input type = "text" id = "username" placeholder="Enter your name here" data-tooltip="Please enter your full name.">
 </label>
-
+<p class="charcount" id="namecount"> </p>
 <label>
     Email:
- <input type = "email" id = "email" placeholder="Enter your email here">
+ <input type = "email" id = "email" placeholder="Enter your email here" data-tooltip="We will never share your email">
 </label>
-
+<p class="charcount" id="emailcount"> </p>
 <label>
     Comments:
- <textarea id = "comments" placeholder="Enter your comments here"> </textarea>
+ <textarea id = "comments" placeholder="Enter your comments here" data-tooltip="Share your feedback"> </textarea>
 </label>
+<p class="charcount" id="commentcount"> </p>
 <button type ="submit"> Submit </button>
         </form>
+        <div id="feedbackdisplay">
+            <h3> Feedback Entries </h3>
+        </div>
     </div>
-    <script> src = "cp_1.js" </script>
+    <script src = "cp_1.js"> </script> 
 </body>
 </html>
